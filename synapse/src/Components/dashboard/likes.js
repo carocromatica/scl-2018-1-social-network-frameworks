@@ -19,8 +19,8 @@ class LikeButton extends React.Component {
     
     const label = this.state.liked ? <i class="fas fa-heart"></i>: <i class="far fa-heart"></i>
     return (
-      <div className="customContainer">
-        <button className="btn btn-primary" onClick={this.handleClick}>
+      <div className="like">
+        <button className="btn  orange darken-1" onClick={this.handleClick}>
           {label}</button>
         
       </div>
