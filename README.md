@@ -2,9 +2,7 @@
 
 ## Introducción
 
-En este proyecto se reescribió la anterior red social llamada 4edu. Link al repositorio (https://github.com/carocromatica/scl-2018-05-bc-core-pm-socialnetwork). Link al deploy (https://sorayasm.github.io/scl-2018-05-bc-core-pm-socialnetwork/src/).
-
-El alcance del proyecto y el detalle de sus características es exactamente
+En este proyecto se reescribió la anterior red social. Su alcance y el detalle de sus características es exactamente
 [el mismo que el original](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network),
 incluyendo la parte de Hacker Edition.
 
