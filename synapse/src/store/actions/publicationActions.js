@@ -7,6 +7,7 @@ export const createPublication = (publication) => {
       ...publication,
       authorFirstName: profile.firstName,
       authorLastName: profile.lastName,
+      authorInitials:profile.initials, //descubrimiento!
       authorId: authorId,
       createdAt: new Date()
     }).then(() => {
