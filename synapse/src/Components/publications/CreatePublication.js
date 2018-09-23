@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { createPublication } from '../../store/actions/publicationActions'
 import { Redirect } from 'react-router-dom'
 
-class createPublication extends Component {
+class CreatePublication extends Component {
   state = {
     title: '',
     content: ''
@@ -51,8 +51,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createProject: (publication) => dispatch(createProject(publication))
+    createPublication: (publication) => dispatch(createPublication(publication))
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(createPublication)
+export default connect(mapStateToProps, mapDispatchToProps)(CreatePublication)

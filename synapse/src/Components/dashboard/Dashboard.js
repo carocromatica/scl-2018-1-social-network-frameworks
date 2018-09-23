@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ProjectList from '../projects/ProjectList'
+import ListPublication from '../publications/ListPublication'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
@@ -9,14 +9,14 @@ import { Redirect } from 'react-router-dom'
 
 class Dashboard extends Component {
   render() {
-    const { projects, auth } = this.props;
+    const { publications, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
 
     return (
       <div className="dashboard container">
         <div className="row">
           <div className="col s12 m6">
-            <ProjectList projects={projects} />
+            <ListPublication publications={publications} />
           </div>
           
         </div>
@@ -28,7 +28,7 @@ class Dashboard extends Component {
 const mapStateToProps = (state) => {
   // console.log(state);
   return {
-    projects: state.firestore.ordered.projects,
+    publications: state.firestore.ordered.publications,
     auth: state.firebase.auth,
 
   }
@@ -37,6 +37,6 @@ const mapStateToProps = (state) => {
 export default compose(
   connect(mapStateToProps),
   firestoreConnect([
-    { collection: 'projects', orderBy: ['createdAt', 'desc']},
+    { collection: 'publications', orderBy: ['createdAt', 'desc']},
   ])
 )(Dashboard)
