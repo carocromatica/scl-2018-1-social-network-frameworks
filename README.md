@@ -1,42 +1,23 @@
 # Rehaciendo tu red social usando librerías y frameworks
 
-## Preámbulo
+## Introducción
 
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las caractrísticas _específicas_ de
-nuestra aplicación.
+En este proyecto se reescribió la anterior red social llamada 4edu. Link al repositorio (https://github.com/carocromatica/scl-2018-05-bc-core-pm-socialnetwork). Link al deploy (https://sorayasm.github.io/scl-2018-05-bc-core-pm-socialnetwork/src/).
+
+El alcance del proyecto y el detalle de sus características es exactamente
+[el mismo que el original](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network),
+incluyendo la parte de Hacker Edition.
+
+El desafío de este proyecto radica en la utilización de nuevas tecnologías como [React](https://reactjs.org/), 
+una libreria de JavaScript más utilizadas en todo el mundo; [Redux] (https://es.redux.js.org/), un contenedor 
+predecible del estado de aplicaciones JavaScript; y [Firebase] (https://firebase.google.com/?hl=es-419) para 
+el manejo de registro, login de usuarias y la permanencia de datos (mensajes) en la base de datos en tiempo real.
 
 Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
 código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos una
 **arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
 **abstracciones**, un **vocabulario**, una **comunidad**, ...
 
-Como desarrolladora Front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
-
-![caracoles](http://www.animated-photography.com/images/portfolio/full/Evolution.jpg)
-
-## Introducción
-
-En este proyecto tendrás la oportunidad de _re-escribir_ tu proyecto anterior de
-la _red social_, pero esta vez usando un _framework_ o una _librería_.
-
-Creemos que la mejor manera de enfrentarte a estas herramientas es
-eliminando de la ecuación el hecho de que tengas que entender un proyecto desde
-cero, su alcance, sus particularidades, el flujo, las validaciones, etc.
-Concéntrate en aprender y utilizar estas nuevas tecnologías.
-
-El alcance del proyecto y el detalle de sus características es exactamente
-[el mismo que el original](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network),
-incluyendo la parte de Hacker Edition.
 
 ## Objetivos
 
@@ -52,17 +33,31 @@ web, es muy común tener que enfrentarse a este tipo de escenario donde decidimo
 (o alguien decide por nosotros) que lo mejor para seguir evolucionando una
 aplicación es re-escribirla usando una nueva tecnología.
 
+##  Instalación
+
+Para instalar este proyecto en tu computador, se puede clonar o descargar este repositorio. Luego debes
+tener intalado nodejs (https://nodejs.org/es/) e instalar las siguientes dependencias con npm (https://www.npmjs.com/):
+
+* npm i react
+* npm i firebase
+* npm i react-firestore
+* npm install react-router-dom
+* npm i redux
+* npm install redux react-redux
+* npm i moment
+* npm i redux-firestore
+* npm i redux-thunk
+
+** Puedes acceder a la red social en el siguiente link () **
+
+Deberás crear una cuenta y luego podrás ingresar a la red social cuantas veces quieras.
+
+
 ## Consideraciones generales
 
-Este proyecto se debe "resolver" en duplas.
+Este proyecto se debe "resolver" en duplas:
+Antonella Caroca y Carolina Torres.
 
-Discutan y pónganse de acuerdo sobre cuál de los proyectos van a hacer desde cero.
-Si no se pueden poner de acuerdo en 10 minutos, [aquí hay algo que puede ayudar](https://justflipacoin.com/)
-
-Investiguen un poco sobre estas tres herramientas propuestas (React, Angular y
-Vue) y elijan con cuál quieren trabajar.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este repositorio.
 
 ## Parte obligatoria
 
@@ -129,45 +124,7 @@ Te aconsejamos revisar la rúbrica:
 
 ***
 
-## Pistas / Tips / Lecturas complementarias
 
-Antes de elegir un framework, te recomendamos leer los siguientes artículos:
-
-* [The deepest reason why modern JavaScript frameworks exist](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445)
-* [Should I use frameworks or libraries such as Angular, React, or VueJS or not?](https://dev.to/ericpaulbasbas/should-i-use-frameworks-or-libraries-such-as-angular-react-or-vuejs-or-not-3dp)
-
-No dejes de explorar la documentación oficial de cada herramienta:
-
-### React
-
-* [React - docs oficiales](https://reactjs.org/)
-* [React - tutorial](https://egghead.io/courses/the-beginner-s-guide-to-react)
-* [Redux - tutorial](https://egghead.io/courses/getting-started-with-redux)
-
-### Angular
-
-* [Angular - docs oficiales](https://angular.io/)
-* [Angular - tutorial](https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ)
-* [Angular - crud](https://www.youtube.com/watch?v=6wVolJfXn1c)
-* [Angular - redux](https://www.youtube.com/playlist?list=PLCKuOXG0bPi3FtoplJe0JOpiV6OyK30wd)
-
-### Vue
-
-* [Vue - docs oficiales](https://vuejs.org/)
-* [Vue- adicional](https://scotch.io/search?q=vue)
-* [Vue- school](https://vueschool.io/)
-
-Independientemente de si eliges React, Vue o Angular, todos estas herramientes
-se usan muchas veces en conjunción con Redux como manejador de _estado_.
-
-* [Redux - docs oficiales](https://redux.js.org/)
-
-Otros:
-
-* [create-react-app](https://github.com/facebook/create-react-app)
-* [React js en español - tutorial básico, primeros pasos y ejemplos - frontendlabs.io](https://frontendlabs.io/3158--react-js-espanol-tutorial-basico-primeros-pasos-ejemplos)
-* [Angular CLI](https://cli.angular.io/)
-* [Vue CLI](https://cli.vuejs.org/)
 
 ## Checklist
 
