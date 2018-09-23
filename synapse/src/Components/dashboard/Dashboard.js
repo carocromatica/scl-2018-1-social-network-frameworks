@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
+import IconBar from '../iconBar/IconBar'
 
 
 
@@ -15,6 +16,7 @@ class Dashboard extends Component {
     return (
       <div className="container">
         <div className="row">
+        <IconBar />
           <div className="col s12 m10 offset-m1 l6 offset-l3">
             <ListPublication publications={publications} />
           </div>
