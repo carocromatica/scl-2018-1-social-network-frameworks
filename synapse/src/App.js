@@ -5,10 +5,13 @@ import Dashboard from './Components/dashboard/Dashboard'
 import SignIn from './Components/auth/SignIn'
 import SignUp from './Components/auth/SignUp'
 import { db } from 'firebase'
+import Friends from './Components/friends/Friends';
+
 
 class App extends Component {
   render() {
     return (
+
       <BrowserRouter>
         <div className="App">
            <Navbar />
@@ -22,6 +25,7 @@ class App extends Component {
           </Switch>
         </div>
       </BrowserRouter>
+
     );
   }
 }
