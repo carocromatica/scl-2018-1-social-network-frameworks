@@ -13,9 +13,9 @@ class Dashboard extends Component {
     if (!auth.uid) return <Redirect to='/signin' /> 
 
     return (
-      <div className="dashboard container">
+      <div className="container">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10 offset-m1 l6 offset-l3">
             <ListPublication publications={publications} />
           </div>
           

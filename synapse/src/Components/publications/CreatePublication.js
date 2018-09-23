@@ -23,7 +23,7 @@ class CreatePublication extends Component {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
-      <div className="container">
+      <div className="card">
         <form className="white" onSubmit={this.handleSubmit}>
           
           <div className="input-field">
