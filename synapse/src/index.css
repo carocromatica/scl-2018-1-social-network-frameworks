@@ -1,0 +1,81 @@
+html{
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  
+  background-size: 100%;
+  /* background-position: bottom; */
+  background-color: #95e8f3;
+  min-height: 100%;
+  background: url(/img/synapse03.png) fixed;
+}
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
+
+form button, form h5{
+  margin: 0px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+.container img {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.containerFriends {
+  border: 1px solid #ccc;
+  /* width: 564px; con esto el div se corre hacia el lado izq de la pantalla */
+  min-height:68px;
+  padding: 10px;
+  font-family: "Helvitica", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+ .containerFriends div {
+  border: 1px solid #ccc;
+
+}
+
+#avatar {
+  
+  width: 70px;
+  height: 50px;
+  float: left;
+}
+
+
+.post{
+  
+  border-bottom: 1px lightgray solid;
+  padding-top:20px;
+  padding-bottom:10px;
+  
+}
+
+.like{
+  padding-top:10px;
+}
+
+.author{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+textarea { resize: both; }
