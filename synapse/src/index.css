@@ -31,9 +31,24 @@ textarea.materialize-textarea:focus:not([readonly]){
   box-shadow: none;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-input[type=password]:not(.browser-default):focus:not([readonly]) + label{
-  color: #ec407a !important;
+.container img {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.container {
+  border: 1px solid #ccc;
+  /* width: 564px; con esto el div se corre hacia el lado izq de la pantalla */
+  min-height:68px;
+  padding: 10px;
+  font-family: "Helvitica", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+ .container div {
+  border: 1px solid #ccc;
+
 }
