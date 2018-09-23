@@ -10,10 +10,11 @@ const Navbar = (props) => {
   const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />; // operador ternario
 
   return (
-    <nav className="nav-wrapper grey darken-3">
-      <div className="container">
+    <nav className="nav-wrapper blue-grey darken-4">
+      <div className="">
+      
         <Link to='/' className="brand-logo">Synapse</Link>
-        {links}
+        <span>{links}</span>
       </div>
     </nav>
   )

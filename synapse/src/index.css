@@ -11,7 +11,7 @@ body {
   /* background-position: bottom; */
   background-color: #95e8f3;
   min-height: 100%;
-  background: url(/img/synapse03.png) no-repeat;
+  background: url(/img/synapse03.png) fixed;
 }
 
 form{
@@ -20,7 +20,7 @@ form{
 }
 
 form button, form h5{
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 input[type=text]:not(.browser-default):focus:not([readonly]),
@@ -52,3 +52,30 @@ textarea.materialize-textarea:focus:not([readonly]){
   border: 1px solid #ccc;
 
 }
+
+#avatar {
+  
+  width: 70px;
+  height: 50px;
+  float: left;
+}
+
+
+.post{
+  
+  border-bottom: 1px lightgray solid;
+  padding-top:20px;
+  padding-bottom:10px;
+  
+}
+
+.like{
+  padding-top:10px;
+}
+
+.author{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+textarea { resize: both; }
