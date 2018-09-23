@@ -9,8 +9,8 @@ El alcance del proyecto y el detalle de sus características es exactamente
 incluyendo la parte de Hacker Edition.
 
 El desafío de este proyecto radica en la utilización de nuevas tecnologías como [React](https://reactjs.org/), 
-una libreria de JavaScript más utilizadas en todo el mundo; [Redux] (https://es.redux.js.org/), un contenedor 
-predecible del estado de aplicaciones JavaScript; y [Firebase] (https://firebase.google.com/?hl=es-419) para 
+una libreria de JavaScript más utilizadas en todo el mundo; [Redux](https://es.redux.js.org/), un contenedor 
+predecible del estado de aplicaciones JavaScript; y [Firebase](https://firebase.google.com/?hl=es-419) para 
 el manejo de registro, login de usuarias y la permanencia de datos (mensajes) en la base de datos en tiempo real.
 
 Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
@@ -36,7 +36,7 @@ aplicación es re-escribirla usando una nueva tecnología.
 ##  Instalación
 
 Para instalar este proyecto en tu computador, se puede clonar o descargar este repositorio. Luego debes
-tener intalado nodejs (https://nodejs.org/es/) e instalar las siguientes dependencias con npm (https://www.npmjs.com/):
+tener intalado [nodejs](https://nodejs.org/es/) e instalar las siguientes dependencias con [npm](https://www.npmjs.com/):
 
 * npm i react
 * npm i firebase
@@ -48,7 +48,7 @@ tener intalado nodejs (https://nodejs.org/es/) e instalar las siguientes depende
 * npm i redux-firestore
 * npm i redux-thunk
 
-** Puedes acceder a la red social en el siguiente link () **
+**Puedes acceder a la red social en el siguiente link ()**
 
 Deberás crear una cuenta y luego podrás ingresar a la red social cuantas veces quieras.
 
