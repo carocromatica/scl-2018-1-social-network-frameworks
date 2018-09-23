@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-//import Navbar from './components/layout/Navbar'
+import Navbar from './Components/nav/Nav'
 import Dashboard from './Components/dashboard/Dashboard'
-//import ProjectDetails from './components/projects/ProjectDetails'
 import SignIn from './Components/auth/SignIn'
 import SignUp from './Components/auth/SignUp'
-//import CreateProject from './components/projects/CreateProject'
 import { db } from 'firebase'
 
 class App extends Component {
@@ -13,7 +11,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          {/* <Navbar />*/}
+           <Navbar />
           <Switch>
              
             <Route exact path='/'component={Dashboard} />
