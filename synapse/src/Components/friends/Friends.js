@@ -20,7 +20,7 @@ const amigos = [{nombre: 'Alicia Bárcena', foto: "https://image.flaticon.com/ic
 class Friends extends Component {
     render(){
         return(
-            <div className="container">
+            <div className="containerFriends">
                 {amigos.map((e, i) => {
                     let num = i + 1; // esto genera el id de las fotos de los amigos
                     return (

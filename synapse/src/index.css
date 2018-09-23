@@ -38,7 +38,7 @@ textarea.materialize-textarea:focus:not([readonly]){
   margin-right: 10px;
 }
 
-.container {
+.containerFriends {
   border: 1px solid #ccc;
   /* width: 564px; con esto el div se corre hacia el lado izq de la pantalla */
   min-height:68px;
@@ -48,7 +48,7 @@ textarea.materialize-textarea:focus:not([readonly]){
   line-height: 18px;
 }
 
- .container div {
+ .containerFriends div {
   border: 1px solid #ccc;
 
 }
