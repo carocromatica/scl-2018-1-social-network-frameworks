@@ -5,8 +5,8 @@ import { Redirect } from 'react-router-dom'
 
 class CreatePublication extends Component {
   state = {
-    title: '',
-    content: ''
+    
+    content: '',
   }
   handleChange = (e) => {
     this.setState({
