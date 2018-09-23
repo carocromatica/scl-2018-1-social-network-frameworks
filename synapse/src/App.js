@@ -4,7 +4,6 @@ import Navbar from './Components/nav/Nav'
 import Dashboard from './Components/dashboard/Dashboard'
 import SignIn from './Components/auth/SignIn'
 import SignUp from './Components/auth/SignUp'
-import { db } from 'firebase'
 import Friends from './Components/friends/Friends';
 
 
