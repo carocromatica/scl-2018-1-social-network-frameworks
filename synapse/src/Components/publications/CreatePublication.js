@@ -27,8 +27,8 @@ class CreatePublication extends Component {
         <form className="white" onSubmit={this.handleSubmit}>
           
           <div className="input-field">
-            <textarea id="content"  onChange={this.handleChange}></textarea>
-            <label htmlFor="content">¿Que estás pensando?</label>
+            <textarea id="content"  onChange={this.handleChange} rows="5"></textarea>
+            <label htmlFor="content" >¿Que estás pensando?</label>
           </div>
           <div className="input-field center-align">
             <button className="btn teal lighten-2">Publicar</button>

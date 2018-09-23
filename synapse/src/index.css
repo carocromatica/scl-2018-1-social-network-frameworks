@@ -77,3 +77,5 @@ textarea.materialize-textarea:focus:not([readonly]){
   font-weight: bold;
   font-size: 1.2em;
 }
+
+textarea { resize: both; }
