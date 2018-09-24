@@ -24,6 +24,20 @@ class Challenge extends Component {
         <IconBar />
         </div>
         SOY desafios!
+        <div className="divChallenges">
+                <div><img class="iconMat" src="https://image.flaticon.com/icons/svg/148/148787.svg" alt="matemática" width="100"/> <p>Matemática</p></div>
+                <hr></hr>
+                <div> <p>Historia</p></div>
+                <hr></hr>
+                <div> <p>Biología</p></div>
+                <hr></hr>
+                <div> <p>Lenguaje</p></div>
+                <hr></hr>
+                <div> <p>Inglés</p></div>
+                <hr></hr>
+                <div> <p>Física</p></div>
+                <hr></hr>
+            </div>
           </div>
           
         </div>
