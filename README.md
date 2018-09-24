@@ -46,7 +46,7 @@ tener intalado [nodejs](https://nodejs.org/es/) e instalar las siguientes depend
 * npm i redux-firestore
 * npm i redux-thunk
 
-**Puedes acceder a la red social en el siguiente link ()**
+**Puedes acceder a la red social en el siguiente link (https://carocromatica.github.io/scl-2018-1-social-network-frameworks/)**
 
 Deberás crear una cuenta y luego podrás ingresar a la red social cuantas veces quieras.
 
