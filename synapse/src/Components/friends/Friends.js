@@ -1,6 +1,10 @@
 import '../../App.css';
 import React, { Component } from 'react';
 import '../../App';
+import '../nav/FriendsLinks';
+import '../nav/Nav';
+
+
 
 
 const amigos = [{nombre: 'Alicia Bárcena', foto: "https://image.flaticon.com/icons/svg/53/53129.svg"
@@ -21,17 +25,20 @@ class Friends extends Component {
     render(){
         return(
             <div className="containerFriends">
+            
                 {amigos.map((e, i) => {
                     let num = i + 1; // esto genera el id de las fotos de los amigos
                     return (
                         <div className="listOfFriends" key={num}>
+                            
                             <h4 className="tituloAmigos">Amig@s</h4>
                             <p className="friendName"> {`${e.nombre}`}</p>
                             <img className="foto" src={e.foto} width="100px" height="100px" alt={e.nombre}/>
                         </div>
                     )
                 })}
-  
+               
+               
             </div>
         )
     }

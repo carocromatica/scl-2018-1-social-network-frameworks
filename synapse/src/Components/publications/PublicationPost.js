@@ -1,10 +1,6 @@
 import React from 'react'
 import moment from 'moment'
-//import { NavLink } from 'react-router-dom'
-import { db } from 'firebase'
-import { profile } from 'firebase'
 import Likes from '../dashboard/likes'
-import deleteProject from '../../store/actions/postDelete'
 
 
 const PublicationPost = ({ publication }) => {

@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 import { connect } from 'react-redux'
+import FriendsLinks from './FriendsLinks'
+import '../../App.css';
+import '../friends/Friends';
+import './FriendsLinks';
+
 
 const Navbar = (props) => {
   const { auth, profile } = props;
   // console.log(auth);
+  const linkFriends = <FriendsLinks/>
   const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignedOutLinks />; // operador ternario
 
   return (
@@ -15,6 +21,8 @@ const Navbar = (props) => {
       
         <Link to='/' className="brand-logo">Synapse</Link>
         <span>{links}</span>
+        <link to='../friends/Friends.js' className="friends"></link>
+        <span className='friends'>{linkFriends}</span>
       </div>
     </nav>
   )
