@@ -3,7 +3,6 @@ import moment from 'moment'
 import Likes from '../dashboard/likes'
 
 const PublicationPost = ({ publication }) => {
-
   return (
     <div className="card z-depth-0">
       <div className="card-content grey-text text-darken-3 ">
@@ -22,5 +21,4 @@ const PublicationPost = ({ publication }) => {
     </div>
   )
 }
-
 export default PublicationPost
