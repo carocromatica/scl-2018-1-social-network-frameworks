@@ -4,9 +4,9 @@ import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
 import IconBar from '../iconBar/IconBar'
 import Navbar from '../nav/Nav'
-import Friends from '../friends/Friends'
 
-class FriendList extends Component {
+
+class Challenge extends Component {
   render() {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
@@ -21,9 +21,9 @@ class FriendList extends Component {
        
           <div className="col s12 m10 offset-m1 l6 offset-l3">
           <div className="card z-depth-0">
-        <IconBar /> 
+        <IconBar />
         </div>
-        <Friends />
+        SOY desafios!
           </div>
           
         </div>
@@ -42,4 +42,4 @@ const mapStateToProps = (state) => {
 
 export default compose(
   connect(mapStateToProps),
-)(FriendList)
+)(Challenge)

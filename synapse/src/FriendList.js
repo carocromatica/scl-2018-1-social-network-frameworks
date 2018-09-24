@@ -1,12 +1,15 @@
+import React, { Component } from 'react'
+import ListPublication from '../publications/ListPublication'
 import { connect } from 'react-redux'
+import { firestoreConnect } from 'react-redux-firebase'
+import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
-import Friends from './Components/friends/Friends'
 import IconBar from '../iconBar/IconBar'
 import Navbar from '../nav/Nav'
- 
+
 class FriendList extends Component {
   render() {
-    const { auth } = this.props;
+    const { publications, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
      <div>
@@ -19,9 +22,9 @@ class FriendList extends Component {
        
           <div className="col s12 m10 offset-m1 l6 offset-l3">
           <div className="card z-depth-0">
-        <IconBar /> holi
+        <IconBar /> 
         </div>
-            <Friends />
+            <ListPublication publications={publications} />
           </div>
           
         </div>
@@ -32,7 +35,7 @@ class FriendList extends Component {
 }
 
 const mapStateToProps = (state) => {
-
+  // console.log(state);
   return {
     publications: state.firestore.ordered.publications,
     auth: state.firebase.auth,
