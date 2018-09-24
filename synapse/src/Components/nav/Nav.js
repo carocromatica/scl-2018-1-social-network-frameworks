@@ -12,7 +12,6 @@ const Navbar = (props) => {
   return (
     <nav className="nav-wrapper blue-grey darken-4">
       <div className="">
-      
         <Link to='/' className="brand-logo">Synapse</Link>
         <span>{links}</span>
       </div>

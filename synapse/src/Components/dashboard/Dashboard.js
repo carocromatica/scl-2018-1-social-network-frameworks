@@ -7,13 +7,10 @@ import { Redirect } from 'react-router-dom'
 import IconBar from '../iconBar/IconBar'
 import Navbar from '../nav/Nav'
 
-
-
 class Dashboard extends Component {
   render() {
     const { publications, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
-
     return (
      <div>
         <div>
@@ -25,7 +22,7 @@ class Dashboard extends Component {
        
           <div className="col s12 m10 offset-m1 l6 offset-l3">
           <div className="card z-depth-0">
-        <IconBar />
+        <IconBar /> holi
         </div>
             <ListPublication publications={publications} />
           </div>

@@ -3,16 +3,12 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
 
-
-const IconBar = (props) => {
+const IconBar = () => {
   return (
     <div>
-      <ul className="right">
+      <ul>
         <li><NavLink to='/'>HOME</NavLink></li>
-        <li><NavLink to='/events'>Eventos</NavLink></li>
-        <li><NavLink to='/friends'>amigos</NavLink></li>
-        <li><NavLink to='/challenge'>desafios</NavLink></li>
-      
+        <li><NavLink to='/friendlist'>RENDERIZA</NavLink></li>
       </ul>
     </div>
   )
