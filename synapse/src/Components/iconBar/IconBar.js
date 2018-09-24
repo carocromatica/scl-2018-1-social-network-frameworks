@@ -1,24 +1,45 @@
-import '../../App.css';
-import React, { Component } from 'react';
-import '../../App';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { signOut } from '../../store/actions/authActions'
+
+const IconBar = () => {
+  return (
+    <div>
+
+      <div className="containerIconBar">
+        <div className="listOfIconBar">
+
+          <li>
+            <NavLink to='/'><i className="fas fa-home activado fa-2x">Inicio</i> </NavLink></li>
+
+          <li>
+            <NavLink to='/friendlist'><i className="fas fa-user-friends fa-2x">Amigos</i> </NavLink></li>
+
+          <li>
+            <NavLink to='/events'> <i className="far fa-calendar-alt fa-2x">Eventos</i></NavLink></li>
+
+          <li>
+            <NavLink to='/challenge'><i className="fas fa-medal fa-2x">Desafíos</i></NavLink></li>
 
 
 
-class IconBar extends Component {
-    render(){
-        return(
-            <div className="containerIconBar">
-                <div className="listOfIconBar">
-                    <p>
-                        <i className="fas fa-home activado fa-2x">Inicio</i> 
-                        <i className="fas fa-user-friends fa-2x">Amigos</i> 
-                        <i className="far fa-calendar-alt fa-2x">Eventos</i>  
-                        <i className="fas fa-medal fa-2x">Desafíos</i>                     
-                    </p>
-                </div>
-            </div>
-        )
-    }
+         
+
+        </div>
+      </div>
+
+      <ul>
+
+      </ul>
+    </div>
+  )
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    signOut: () => dispatch(signOut())
   }
-  
-  export default IconBar;
+}
+
+export default connect(null, mapDispatchToProps)(IconBar)
