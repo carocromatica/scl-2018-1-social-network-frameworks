@@ -15,14 +15,11 @@ class Events extends Component {
           <Navbar />
         </div>
         <div className="container">
-
           <div className="row">
-
             <div className="col s12 m10 offset-m1 l6 offset-l3">
               <div className="card z-depth-0">
                 <IconBar />
               </div>
-              
               <div className='card z-depth-0'>
                 <i class="fas fa-user fa-2x"></i>
                 <p>CREADORA: Antonella Caroca</p>
