@@ -6,7 +6,7 @@ const ListPublication = ({publications}) => {
   return (
 
    
-    <div className="project-list section">
+    <div className="">
 
      <CreatePublication />
       { publications && publications.map(publication => {

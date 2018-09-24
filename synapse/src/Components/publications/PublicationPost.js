@@ -12,7 +12,7 @@ const PublicationPost = ({ publication }) => {
 
   return (
 
-    <div className="card z-depth-0" id="challa">
+    <div className="card z-depth-0">
       <div className="card-content grey-text text-darken-3 ">
         <div>
           <div id="avatar"> 

@@ -9,7 +9,7 @@ import Navbar from '../nav/Nav'
 
 
 
-class Dashboard extends Component {
+class Wall extends Component {
   render() {
     const { publications, auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
@@ -51,4 +51,4 @@ export default compose(
   firestoreConnect([
     { collection: 'publications', orderBy: ['createdAt', 'desc']},
   ])
-)(Dashboard)
+)(Wall)
