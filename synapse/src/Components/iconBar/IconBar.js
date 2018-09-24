@@ -3,19 +3,19 @@ import { NavLink } from 'react-router-dom'
 
 const IconBar = () => {
   return (
-    <div>
-        <div className="listOfIconBar">
-          <li>
-            <NavLink to='/'><i className="fas fa-home activado fa-2x">Inicio</i> </NavLink></li>
+    <div className="card z-depth-0">
+        <div className="row blue-text text-darken-2">
+          <div className="blue-text text-darken-2 col s3">
+            <NavLink  to='/'><i className="fas fa-home blue-text text-darken-2"></i> Inicio</NavLink></div>
             
-          <li>
-            <NavLink to='/friendlist'><i className="fas fa-user-friends fa-2x">Amigos</i> </NavLink></li>
+            <div className="blue-text text-darken-2 col s3">
+            <NavLink to='/friendlist'><i className="fas fa-user-friends blue-text text-darken-2 "></i> Amigos</NavLink></div>
 
-          <li>
-            <NavLink to='/events'> <i className="far fa-calendar-alt fa-2x">Eventos</i></NavLink></li>
+           <div className="blue-text text-darken-2 col s3">
+            <NavLink to='/events'> <i className="far fa-calendar-alt blue-text text-darken-2"></i>Eventos</NavLink></div>
 
-          <li>
-            <NavLink to='/challenge'><i className="fas fa-medal fa-2x">Desafíos</i></NavLink></li>
+           <div className="blue-text text-darken-2 col s3">
+            <NavLink to='/challenge'><i className="fas fa-medal blue-text text-darken-2"></i>Desafíos</NavLink></div>
         </div>
     </div>
   )

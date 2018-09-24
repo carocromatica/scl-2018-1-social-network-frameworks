@@ -19,7 +19,7 @@ class Dashboard extends Component {
           <div className="container">
             <div className="row">
               <div className="col s12 m10 offset-m1 l6 offset-l3">
-                <div className="card z-depth-0">
+                <div>
                   <IconBar />
                 </div>
                 <ListPublication publications={publications} />
